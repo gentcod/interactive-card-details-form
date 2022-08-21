@@ -1,12 +1,28 @@
-.hidden {
-   display: none !important;
-   transform: translateY(-5rem);
-}
+// .hidden {
+//    display: none !important;
+//    transform: translateY(-5rem);
+// }
 
-.active {
-   display: visible;
-}
+// .active {
+//    display: visible;
+// }
 
-.hide {
-   display: none !important;
+// .hide {
+//    display: none !important;
+// }
+
+.ball {
+   border-radius: 50%;
+
+   &--large {
+      background-color: $color-white;
+      max-height: 3rem;
+      max-width: 3rem;
+   }
+
+   &--small {
+      border: 1px solid $color-white;
+      max-width: 1.5rem;
+      max-height: 1.5rem;
+   }
 }
