@@ -1,0 +1,36 @@
+/*MEDIA QUERY STYLE GUIDE
+
+0 - 600PX: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+1200 - 1440px: Desktop
+1800px+ : Big Desktop
+
+1em = 16px: 
+*/
+
+@mixin respond($device) {
+   @if $device == phone {
+      @media (max-width: 37.5em) {@content}; //600px
+   }
+
+   @if $device == tab-port {
+      @media (max-width: 56.25em) {@content}; //900px
+   }
+
+   @if $device == tab-land {
+      @media (max-width: 75em) {@content}; //1200px
+   }
+
+   @if $device == big-desktop {
+      @media (min-width: 90em) {@content}; //1800px
+   }
+}
+
+@mixin clearfix {
+   &::after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+}

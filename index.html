@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="sass/main.scss"> -->
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="background--left">
+      <img src="./images/bg-main-desktop.png" alt="Background Gradient" class="background--left-image">
+      <div class="cards__container">
+        <div class="card card--front">
+          <img src="./images/bg-card-front.png" alt="Card Front" class="card__img">
+        </div>
+        <div class="card card--back">
+          <img src="./images/bg-card-back.png" alt="Card Back" class="card__img">
+        </div>
+      </div>
+    </div>
+    <div class="background--right">
+      <div class="form__container">
+        <form action="POST" class="form">
+          <div class="form__row">
+            <label for="name" class="form__label">Cardholder Name</label>
+            <input type="text" class="form__input" id="name" required>
+          </div>
+
+          <div class="form__row">
+            <label for="card__number" class="form__label">Card Number</label>
+            <input type="tel" class="form__input" id="card__number" required>
+          </div>
+
+          <div class="form__row">
+            <div class="form__column">
+              <div class="form__row">
+                <label for="card__month" class="form__label">Exp. Date(MM/YY)</label>
+  
+                <div class="form__column">
+                  <input type="tel" class="form__input form__input--small" id="card__month" required>
+                  <input type="tel" class="form__input form__input--small" required>
+                </div>
+              </div>
+    
+              <div class="form__row">
+                <label for="card__cvc" class="form__label">CVC</label>
+                <input type="tel" class="form__input form__input--mid" id="card__cvc" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <button class="form__button" type="submit">Confirm</button>
+          </div>
+        </div>
+        </form>
+    </div>
+  </div>
+  0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+  <!-- Completed state start -->
+
+  Thank you!
+  We've added your card details
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
