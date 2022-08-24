@@ -15,6 +15,8 @@
 
    &--right {
       width: calc(100% * 2/3);
+      position: relative;
+      margin: 0 auto;
    }
 }
 
@@ -56,9 +58,18 @@
 
    &__input {
       padding: 1.5rem;
-      border: 1px solid $color-light-grey-violet;
+      border: 1px solid $color-light-grey;
       outline: none;
       border-radius: .5rem;
+      font-size: 1.4rem;
+      
+      &::placeholder {
+         color: $color-light-grey;
+      }
+
+      &:focus {
+         border: 1px solid $color-violet;
+      }
 
       &--small {
          width: 5.5rem;
@@ -70,6 +81,52 @@
 
       &--mid {
          width: 20rem;
+      }
+   }
+
+   &__confirmation {
+      width: 35rem;
+      height: 40rem;
+      display: inline-block;
+      margin: 0 auto;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      text-align: center;
+
+      &-content {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+
+      &-icon {
+         text-align: center;
+         height: 8rem;
+         width: 8rem;
+         border-radius: 50%;
+         background-image: linear-gradient($color-purple-light, $color-purple-dark);
+         margin: 0 auto;
+         color: $color-white;
+         position: relative;
+
+         margin-bottom: 5rem;
+      }
+
+      &-heading {
+         font-size: 2.4rem;
+         font-weight: 900;
+         text-transform: uppercase;
+         letter-spacing: .5rem;
+         margin-bottom: 2rem;
+         color: $color-violet;
+      }
+
+      &-msg {
+         color: $color-dark-grey;
+         font-size: 1.6rem;
+         margin-bottom: 5rem;
       }
    }
 }

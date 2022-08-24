@@ -6,8 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="sass/main.scss"> -->
+  <script src="./js/app.js" defer></script>
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -23,27 +25,26 @@
       <img src="./images/bg-main-desktop.png" alt="Background Gradient" class="background--left-image">
       <div class="cards__container">
         <div class="card card--front">
-          
           <div class="card--front-details">
-
             <div class="card--front-details--top">
-              <div class="card--front-details ball ball--large"></div>
-              <div class="card--front-details ball ball--small"></div>
+              <div class="ball ball--large"></div>
+              <div class="ball ball--small"></div>
             </div>
 
 
+            <span class="card--front-details--card-num">0000 0000 0000 0000</span>
+            
             <div class="card--front-details--bottom">
-              <span class="card--front-details--card-num">0000 0000 0000 0000</span>
-
-              <div class="card--front-details--bottom-container">
-                <span class="card--front-details--name">Jane Appleseed</span>
-                <span class="card--front-details--card-exp-date">00/00</span>
-              </div>
+              <span class="card--front-details--name">Jane Appleseed</span>
+              <span class="card--front-details--card-exp-date">00/00</span>
             </div>
           </div>
           <img src="./images/bg-card-front.png" alt="Card Front" class="card__img">
         </div>
         <div class="card card--back">
+          <div class="card--back-details">
+            <span class="card--back-details--card-cvc">000</span>
+          </div>
           <img src="./images/bg-card-back.png" alt="Card Back" class="card__img">
         </div>
       </div>
@@ -53,12 +54,12 @@
         <form action="POST" class="form">
           <div class="form__row">
             <label for="name" class="form__label">Cardholder Name</label>
-            <input type="text" class="form__input" id="name" required>
+            <input type="text" class="form__input" id="name" placeholder="e.g. Jane Appleseed" required>
           </div>
 
           <div class="form__row">
             <label for="card__number" class="form__label">Card Number</label>
-            <input type="tel" class="form__input" id="card__number" required>
+            <input type="tel" class="form__input" id="card__number" placeholder="e.g. 1234 5678 9123 0000" required>
           </div>
 
           <div class="form__row">
@@ -67,14 +68,14 @@
                 <label for="card__month" class="form__label">Exp. Date(MM/YY)</label>
   
                 <div class="form__column">
-                  <input type="tel" class="form__input form__input--small" id="card__month" required>
-                  <input type="tel" class="form__input form__input--small" required>
+                  <input type="tel" class="form__input form__input--small" id="card__month" placeholder="MM" required>
+                  <input type="tel" class="form__input form__input--small" placeholder="YY" required>
                 </div>
               </div>
     
               <div class="form__row">
                 <label for="card__cvc" class="form__label">CVC</label>
-                <input type="tel" class="form__input form__input--mid" id="card__cvc" required>
+                <input type="tel" class="form__input form__input--mid" id="card__cvc" placeholder="e.g. 123" required>
               </div>
             </div>
           </div>
@@ -84,30 +85,17 @@
           </div>
         </div>
         </form>
+
+        <div class="form__confirmation hide">
+          <div class="form__confirmation-content">
+            <div class="form__confirmation-icon"><i class="fa-solid fa-check icon"></i></div>
+            <h2 class="form__confirmation-heading">Thank you!</h2>
+            <p class="form__confirmation-msg">We've added your card details</p>
+            <button class="form__button" type="submit">Confirm</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
   Continue
   
   <div class="attribution">

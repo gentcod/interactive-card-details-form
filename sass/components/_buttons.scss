@@ -1,7 +1,7 @@
 .form__button {
    padding: 1.5rem 10rem;
    border: 0;
-   background-color: $color-dark-grey-violet;
+   background-color: $color-violet;
    color: $color-white;
    font-size: 1.3rem;
    border-radius: .5rem;
@@ -9,7 +9,7 @@
    transition: all .8s;
 
    &:hover {
-      background-color: $color-mid-grey-violet;
+      background-color: $color-dark-grey;
       color: #222;
       font-weight: 700;
    }

@@ -1,13 +1,11 @@
 {
-  "dependencies": {
-  },
   "name": "interactive-card-details-form-main",
   "description": "![Design preview for the Interactive card details form coding challenge](./design/desktop-preview.jpg)",
   "version": "1.0.0",
   "source": "index.html",
   "devDependencies": {
-    "parcel": "^2.7.0",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "parcel": "^2.7.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

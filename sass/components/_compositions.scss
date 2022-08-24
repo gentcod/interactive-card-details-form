@@ -1,28 +1,34 @@
-// .hidden {
-//    display: none !important;
-//    transform: translateY(-5rem);
-// }
+.active {
+   display: visible;
+}
 
-// .active {
-//    display: visible;
-// }
-
-// .hide {
-//    display: none !important;
-// }
+.hide {
+   display: none !important;
+}
 
 .ball {
+   display: inline-block;
    border-radius: 50%;
 
    &--large {
       background-color: $color-white;
-      max-height: 3rem;
-      max-width: 3rem;
+      height: 4rem;
+      width: 4rem;
+      margin-right: 1rem;
    }
 
    &--small {
       border: 1px solid $color-white;
-      max-width: 1.5rem;
-      max-height: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
    }
+}
+
+.icon {
+   font-size: 1.8rem;
+   position: absolute;
+   top: 30%;
+   left: 50%;
+
+   transform: translate(-50%, 50%);
 }
