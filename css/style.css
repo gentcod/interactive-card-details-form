@@ -61,6 +61,8 @@ body {
     background-color: #8e8593;
     color: #222;
     font-weight: 700; }
+  .form__button:active {
+    transform: translateY(1rem); }
 
 .cards__container {
   position: absolute;
@@ -164,7 +166,8 @@ body {
 .form__container {
   width: 80%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  transition: all 1s; }
 
 .form {
   width: 35rem;
@@ -212,7 +215,8 @@ body {
     top: 20%;
     left: 50%;
     transform: translate(-50%, 20%);
-    text-align: center; }
+    text-align: center;
+    transition: all 1s; }
     .form__confirmation-content {
       display: flex;
       flex-direction: column;

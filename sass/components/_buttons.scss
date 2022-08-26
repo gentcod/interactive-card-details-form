@@ -13,4 +13,8 @@
       color: #222;
       font-weight: 700;
    }
+
+   &:active {
+      transform: translateY(1rem);
+   }
 }

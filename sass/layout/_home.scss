@@ -24,6 +24,7 @@
    width: 80%;
    margin: 0 auto;
    position: relative;
+   transition: all 1s;
 }
 
 .form {
@@ -94,6 +95,7 @@
       left: 50%;
       transform: translate(-50%, 20%);
       text-align: center;
+      transition: all 1s;
 
       &-content {
          display: flex;
